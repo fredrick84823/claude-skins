@@ -1,8 +1,8 @@
 // Whether an installed copy is behind. A release is the version bump on main, so main's
 // plugin.json is the latest. register.tsx does the fetching, since $ stays in that file.
-export const LATEST_URL = 'https://raw.githubusercontent.com/hellosverre/claude-skins/main/.claude-plugin/plugin.json'
+export const LATEST_URL = 'https://raw.githubusercontent.com/fredrick84823/claude-skins/main/.claude-plugin/plugin.json'
 const DAY_MS = 24 * 60 * 60 * 1000
-const PLUGIN_ID = 'skins@hellosverre-mods'
+const PLUGIN_ID = 'skins@fredrick-mods'
 
 export type Checked = { at: number }
 

@@ -364,7 +364,7 @@ test('every built-in skin names itself once and fills every slot with a colour, 
   const hex = /^#[0-9a-f]{6}$/
   const slots = Object.keys(tokyoNight.palette)
 
-  expect(SKINS.length).toBe(15)
+  expect(SKINS.length).toBe(16)
   expect(new Set(SKINS.map(skin => skin.name)).size).toBe(SKINS.length)
 
   for (const skin of SKINS) {
@@ -1019,7 +1019,7 @@ test('a release is newer by its first differing part, and anything not x.y.z nev
   expect(isNewer('0.1.2', '0.1.3')).toBe(false)
   expect(isNewer('1.0.0-beta', '0.1.2')).toBe(false)
   expect(isNewer('0.1.3', 'dev')).toBe(false)
-  expect(updateNotice('0.1.3', '0.1.2')).toBe('skins 0.1.3 is out (you have 0.1.2). Run: claude plugin update skins@hellosverre-mods, then restart')
+  expect(updateNotice('0.1.3', '0.1.2')).toBe('skins 0.1.3 is out (you have 0.1.2). Run: claude plugin update skins@fredrick-mods, then restart')
 })
 
 test('each system says dark, light, or nothing', async () => {

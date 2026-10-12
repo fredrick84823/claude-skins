@@ -13,6 +13,7 @@ import oneDark from './one-dark'
 import rosePine from './rose-pine'
 import solarized from './solarized'
 import tokyoNight from './tokyo-night'
+import vellum from './vellum'
 import type { Skin } from '../skin'
 
 // A new built-in skin is one file beside these and one line here. The first is the default.
@@ -32,4 +33,5 @@ export const SKINS: readonly Skin[] = [
   ayu,
   nightOwl,
   mono,
+  vellum,
 ]

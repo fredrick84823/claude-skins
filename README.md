@@ -11,7 +11,7 @@
   <img alt="Claude Code 2.1.287+" src="https://img.shields.io/badge/Claude%20Code-2.1.287%2B-555?style=flat-square">
 </p>
 
-<p align="center">Tool calls with icons and timings, edits as diff cards, tables, code and Mermaid charts as cards,<br>a live usage band, and fifteen skins you can repaint or have Claude design for you.</p>
+<p align="center">Tool calls with icons and timings, edits as diff cards, tables, code and Mermaid charts as cards,<br>a live usage band, and sixteen skins you can repaint or have Claude design for you.</p>
 
 <img alt="Claude Code switching skins with /skin: a coding turn in Noir and Tokyo Night, then Mermaid chart cards in Dracula (xy chart), Catppuccin (sankey), Rosé Pine (radar) and Gruvbox (treemap)" src="docs/demo.gif">
 
@@ -20,25 +20,25 @@
 Needs Claude Code **2.1.287** or later, in a terminal or the desktop app's Code tab. Run both inside Claude Code:
 
 ```
-/plugin marketplace add hellosverre/claude-skins
+/plugin marketplace add fredrick84823/claude-skins
 ```
 
 ```
-/plugin install skins@hellosverre-mods
+/plugin install skins@fredrick-mods
 ```
 
-Restart Claude Code. The **noir** skin is on; type `/skin` to change it.
+Restart Claude Code. The **noir** skin is on; type `/skin vellum` for the Paper Ink skin.
 
 ## Update
 
 skins checks for a new release once a day and shows a toast when you are behind. To update:
 
 ```bash
-claude plugin marketplace update hellosverre-mods
+claude plugin marketplace update fredrick-mods
 ```
 
 ```bash
-claude plugin update skins@hellosverre-mods
+claude plugin update skins@fredrick-mods
 ```
 
 Then restart Claude Code. Open sessions keep the version they started with.
@@ -46,7 +46,7 @@ Then restart Claude Code. Open sessions keep the version they started with.
 ## Uninstall
 
 ```bash
-claude plugin uninstall skins@hellosverre-mods
+claude plugin uninstall skins@fredrick-mods
 ```
 
 To keep it installed but go back to Claude Code's own drawing, run `/skin off`.
@@ -56,7 +56,7 @@ To keep it installed but go back to Claude Code's own drawing, run `/skin off`.
 | Command | What it does |
 |---|---|
 | `/skin` | Settings: pick a skin with a live preview, toggle parts, repaint any colour |
-| `/skin <name>` | Switch skin: `noir`, `tokyo-night`, `dracula`, `catppuccin`, `rose-pine`, `nord`, `gruvbox`, `kanagawa`, `everforest`, `one-dark`, `solarized`, `night-owl`, `ayu`, `github`, `mono` |
+| `/skin <name>` | Switch skin: `vellum`, `noir`, `tokyo-night`, `dracula`, `catppuccin`, `rose-pine`, `nord`, `gruvbox`, `kanagawa`, `everforest`, `one-dark`, `solarized`, `night-owl`, `ayu`, `github`, `mono` |
 | `/skin list` | Every skin, yours included |
 | `/skin off` | Back to Claude Code's own drawing |
 | `/skin rail\|shimmer\|band\|countdown\|clip\|markdown\|quiet\|charts\|math\|commands\|shell\|highlight\|hints\|links\|copy\|fold on\|off` | Toggle one part |
@@ -237,7 +237,7 @@ cd scripts/vendor && npm install && npm run build
 ## Develop
 
 ```bash
-git clone https://github.com/hellosverre/claude-skins && cd claude-skins
+git clone https://github.com/fredrick84823/claude-skins && cd claude-skins
 ```
 
 ```bash
